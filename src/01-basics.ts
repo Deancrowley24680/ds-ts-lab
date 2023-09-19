@@ -32,6 +32,11 @@ const friend1: Friend = {
     }
   }
 
+  interface ColleagueHistory {
+    current: Colleague[],
+    former: Colleague[]
+  }
+
   const colleague1: Colleague = {
     name: "Ralph Graham",
     department: "Engineering",
@@ -58,7 +63,8 @@ const friend1: Friend = {
       extension: 125,
     },
   };
-  const colleagues = {
+
+  export const colleagues : ColleagueHistory = {
     current: [colleague1, colleague2, colleague3],
     former: [],
   };
